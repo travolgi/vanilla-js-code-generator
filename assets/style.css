@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: none;
+	list-style: none;
+	outline: none;
+	box-sizing: border-box;
+}
+
+:root {
+	--white: #fff;
+	--bg: #12121a;
+	--bg-darkpurple: #1c0913;
+	--bg-darkgreen: #002625;
+	--red: #ba0035;
+	--greenwater: #00beb7;
+	--gradient: linear-gradient(80deg, #ba0035 18%, #5b5b84 70%, #00beb7 105%);
+}
+
+::-webkit-scrollbar {
+	width: .7rem;
+}
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 1rem;
+}
+html {
+	scrollbar-width: thin;
+	scroll-behavior: smooth;
+	background-color: var(--bg);
+}
+
+body {
+	font-family: 'Sulphur Point', sans-serif;
+	font-size: 1.15rem;
+	font-weight: 300;
+	font-display: swap;
+	line-height: 1.5;
+	color: var(--white);
+	text-align: center;
+}
+
+.logo {
+	height: 6rem;
+	margin-bottom: 6rem;
+}
+main {
+	padding: 2rem 1rem;
+	position: relative;
+	min-height: 80vh;
+}
+h2 {
+	font-size: 2rem;
+	margin-bottom: 2rem;
+}
+a {
+	color: var(--red);
+}
+
+input, button {
+	font-family: 'Sulphur Point', sans-serif;
+	font-size: 1.12rem;
+	background-color: var(--white);
+	padding: .8rem 1.5rem;
+	margin-bottom: 1rem;
+	border-radius: 2rem;
+	transition: .5s ease;
+}
+button {
+	color: var(--white);
+	border: double .35rem transparent;
+	background-image: var(--gradient);
+	background-clip: padding-box, border-box;
+	background-origin: border-box;
+}
+.btn-secondary{
+	color: var(--bg);
+	background-image: inherit;
+}
+button:hover, button:active {
+	background-image: linear-gradient(#fff,#fff), var(--gradient);
+	color: var(--bg);
+}
+
+.alert {
+	display: none;
+	max-width: 50rem;
+	margin-inline: auto;
+	text-align: left;
+	background-color: rgb(255, 0, 0, .4);
+	padding: .5rem 1rem;
+	border-radius: 1rem;
+	margin-top: .5rem;
+	animation:fadeIn ease .8s;
+}
+.d-block {
+	display: block;
+}
+.codebox {
+	max-width: 50rem;
+	margin-inline: auto;
+	margin-top: 3rem;
+	padding: 1.3rem 2rem;
+	border-radius: 2rem;
+	border: .35rem solid var(--white);
+}
+#code {
+	display: inline-block;
+	background: var(--gradient);
+	background-clip: text;
+	text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width:24em) {
+	input {
+		width: max-content;
+		width: -moz-available;
+	}
+}
+
+@-webkit-keyframes fadeIn {
+	from { opacity:0 }
+	to { opacity:1 }
+}
+@keyframes fadeIn {
+	from {  opacity:0 }
+	to { opacity:1 }
+}

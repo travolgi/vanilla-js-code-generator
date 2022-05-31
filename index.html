@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Generate Codes</title>
+	<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Sulphur+Point&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+	<main>
+		<img src="./assets/travolgi-logo.webp" class="logo" loading="lazy" alt="Travolgi logo">
+
+		<article>
+			<input type="number" name="leng" id="leng" placeholder="Length Code">
+			<button id="generate">GENERATE CODE</button>
+			<button type="reset" id="reset" class="btn-secondary">RESET</button>
+			<div class="alert d-none">Enter the length of the code.</div>
+		</article>
+
+		<div class="codebox">
+			<h1 id="code">GeneratedCode</h1>
+		</div>
+	</main>
+
+	<small>&copy; Travolgi <span id="date"></span> • Developed by <a href="https://travolgi.com" target="_blank">travolgi</a>.</small>
+
+	<script src="./assets/main.js"></script>
+</body>
+</html>
